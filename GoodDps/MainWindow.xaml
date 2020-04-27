@@ -4,9 +4,21 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GoodDps"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        mc:Ignorable="d" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" MinHeight="100" MinWidth="210">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" MinWidth="100">
+                <Label Content="Class" Height="30" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MinHeight="30"/>
+                <Label Content="Specialization" Height="30" VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MinHeight="30"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" MinWidth="150" >
+                <ComboBox MinHeight="30" VerticalContentAlignment="Center"/>
+                <ComboBox MinHeight="30" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+        <Grid>
+            <Button Content="Cancel" MinHeight="30" HorizontalAlignment="Left" IsCancel="True" MinWidth="50"/>
+            <Button Content="Enter" HorizontalContentAlignment="Center" MinHeight="30" HorizontalAlignment="Right" IsDefault="True" MinWidth="50"/>
+        </Grid>
+    </StackPanel>
 </Window>
